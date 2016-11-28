@@ -1,0 +1,22 @@
+figure .team-image{
+	height : 10%;
+	width :20%;
+}
+
+/*h1 .about{
+	text-align:center;
+	color:white;
+}
+*/
+h2 .team-name{
+	margin-left: 50px;
+	font-color:black;
+}
+
+h2 .team-title{
+
+}
+
+ul .contactus{
+	color:white;
+}

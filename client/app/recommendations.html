@@ -1,0 +1,60 @@
+<template name="recommendations">
+	<script src="https://apis.google.com/js/client.js?onload=OnLoadCallback"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+
+    {{> header}}
+	<h1 style="text-align:center">Recommended Vidoes</h1>
+	
+	{{#if showVideos}}
+		<div class = "allVideos" id="allVideos" style="margin:0 0 0 80px">
+			<iframe width="560" height="315" src="" id="video" allowfullscreen></iframe>
+			<iframe width="560" height="315" src="" id="video2" allowfullscreen></iframe>
+			<iframe width="560" height="315" src="" id="video3" allowfullscreen></iframe>
+			<iframe width="560" height="315" src="" id="video4" allowfullscreen></iframe>
+		</div>
+	{{else}}
+		<p>Rate some players first :P</p>
+		<a href="{{pathFor 'form'}}"><h1 style="text-align:center;"><u>Rate Players</u></h1></a>
+	{{/if}}
+
+
+	<script type="text/javascript">
+		var links = ['http://www.youtube.com/embed/eSR0JaIIM88', 'http://www.youtube.com/embed/Z4GvxAFUyg0', 'http://www.youtube.com/embed/WsNZCBzA7jE', 'http://www.youtube.com/embed/zjU2GF1ro20', 'http://www.youtube.com/embed/WBpVPpc-Uus', 'http://www.youtube.com/embed/8i1VmOBOkP0', 'http://www.youtube.com/embed/egxEfBI3hyk', 'http://www.youtube.com/embed/sd8CX-Jq8L4', 'http://www.youtube.com/embed/hLIWgYrWKrE', 'http://www.youtube.com/embed/KJ4hxmrk6iI', 'http://www.youtube.com/embed/C9_2m5iHPtI', 'http://www.youtube.com/embed/evLsTc4SC5s', 'http://www.youtube.com/embed/dd6eHQahAx4', "https://www.youtube.com/embed/8pYdsR-XreE", "https://www.youtube.com/embed/sQooivUJcXs", "https://www.youtube.com/embed/F-3SqsJvyGM", "https://www.youtube.com/embed/ys21qb9L2bU", "https://www.youtube.com/embed/SMgdj3O9y_E", "https://www.youtube.com/embed/ThXVF6rBM_E", "https://www.youtube.com/embed/0oc44DOzAJE", "https://www.youtube.com/embed/3x5ZOgGAlkY", "https://www.youtube.com/embed/yEY8j630yTg", "https://www.youtube.com/embed/14wWs25a8qg", "https://www.youtube.com/embed/rQxN7yvItJg", "https://www.youtube.com/embed/dk_XgnIsM04", ];
+		
+		var random = 0;
+		randomVideo();
+		randomVideo2();
+		randomVideo3();
+		randomVideo4();
+		function randomVideo() {
+    		var temp = random;
+    		// Make sure we do not display the same video twice in a row
+    		while(temp == random) temp = Math.floor(Math.random() * links.length);
+    		random = temp;
+    		document.getElementById("video").src = links[random];
+		}
+
+		function randomVideo2() {
+    		var temp = random;
+    		// Make sure we do not display the same video twice in a row
+    		while(temp == random) temp = Math.floor(Math.random() * links.length);
+    		random = temp;
+    		document.getElementById("video2").src = links[random];
+		}
+		function randomVideo3() {
+    		var temp = random;
+    		// Make sure we do not display the same video twice in a row
+    		while(temp == random) temp = Math.floor(Math.random() * links.length);
+    		random = temp;
+    		document.getElementById("video3").src = links[random];
+		}
+		function randomVideo4() {
+    		var temp = random;
+    		// Make sure we do not display the same video twice in a row
+    		while(temp == random) temp = Math.floor(Math.random() * links.length);
+    		random = temp;
+    		document.getElementById("video4").src = links[random];
+		}
+	</script>
+</template>

@@ -1,0 +1,57 @@
+<template name="homelayout">
+  
+  {{> header}}
+  <body id="top">
+    <main>
+      <div class="billboard">
+       {{#if currentUser}}
+          <h2 style="text-align:center; margin:40px"><bold>Tell us what you <a href="{{pathFor 'form'}}"><u>like</u></a> and we will give you <a href = "{{pathFor 'recommendations'}}"><u>more!</u></a></bold></h2>
+          <!--  <h1 style="text-align:center;"><u>Rate Players</u></h1></a> -->
+       {{/if}}
+      </div>
+    </main>
+    <div class="wrapper col3">
+        <div id="gallery">
+          <ul>
+              <li class="placeholder" style="background-image:url('/assets/img/header4.jpg');">Image Holder</li>
+              <li><a class="swap" href="#">
+                <img src="/assets/img/india.jpg" alt="" />
+                <span><img src="/assets/img/india.jpg" width="950" height="370" alt="" />
+                </span>
+              </a></li>
+              <li><a class="swap" href="#"><img src="/assets/img/sa.jpeg" alt="" />
+                <span><img src="assets/img/sa.jpeg" width="950" height="370" alt="" /></span>
+                </a></li>
+              <li><a class="swap" href="#"><img src="/assets/img/westindies.jpg" alt="" />
+              <span><img src="assets/img/westindies.jpg" width="950" height="370" alt="" /></span>
+              </a></li>
+              <li><a class="swap" href="#"><img src="/assets/img/australia.jpg" alt="" /><span>
+              <img src="/assets/img/australia.jpg" width="950" height="370" alt="" /></span>
+              </a></li>
+              <li class="last"><a class="swap" href="#"><img src="/assets/img/pakistan.jpg" alt="" />
+                <span><img src="/assets/img/pakistan.jpg" width="950" height="370" alt="" /></span>
+              </a></li>
+    
+          </ul>
+        </div>
+    </div>
+    <div class="wrapper col4">
+        <div id="services">
+          <ul>
+              <li><a href="#"><strong>Sachin Tendulkar</strong><img src="/assets/img/sachin.jpg" alt="" /></a></li>
+              <li><a href="#"><strong>MS Dhoni</strong><img src="/assets/img/dhoni.jpg" alt="" /></a></li>
+              <li><a href="#"><strong>ABD</strong><img src="/assets/img/abd.jpg" alt="" /></a></li>
+              <li class="last"><a href="#"><strong>Dale Steyn</strong><img src="/assets/img/steyn.jpg" alt="" /></a></li>
+              <li><a href="#"><strong>S.Afridi</strong><img src="/assets/img/afridi.jpg" alt="" /></a></li>
+              <li><a href="#"><strong>Sunil Narine</strong><img src="/assets/img/narine.jpg" alt="" /></a></li>
+            <li><a href="#"><strong>R.Ponting</strong><img src="/assets/img/ponting.jpg" alt="" /></a></li>
+              <li class="last"><a href="#"><strong>Virat Kohli</strong><img src="/assets/img/kohli.jpg" alt="" /></a></li>
+          </ul>
+          <br class="clear" />
+        </div>
+    </div>
+    
+    </body>                              
+
+  
+</template> 

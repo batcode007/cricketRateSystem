@@ -1,0 +1,36 @@
+<template name = "contact">
+	{{> header}}
+	<ul class="contactus" style="font-size:125%">
+		<li style="margin:0 0 10px 0">Naman Gupta : naman13141[at]iiitd[dot]ac[dot]in </li>	
+
+		<li style="margin:0 0 10px 0">Mohammed Nawazish : nawazish13061[at]iiitd[dot]ac[dot]in</li>
+		<li style="margin:0 0 10px 0">Samir : samir13087[at]iiitd[dot]ac[dot]in</li>
+	</ul>
+	<div class="wrapper col6">
+  		<div id="footer">
+    		<div id="contactform">
+      			<h2>Give Us Your Feedback !</h2>
+      			<form action="#" method="post" class = "feed">
+        			<fieldset>
+          				<legend>Contact Form</legend>
+          				<label for="fullname">Name:
+            				<input id="fullname" name="fullname" type="text" value="" />
+          				</label>
+                  <br>
+                  <br>
+          				<label for="emailaddress" class="margin">Email:
+            				<input id="emailaddress" name="emailaddress" type="text" value="" />
+          				</label>
+                  <br><br>
+          				<label for="message">Message:<br />
+            				<textarea id="message" name="message" cols="40" rows="4"></textarea>
+          				</label>
+          				<p><button type="submit" class="btn btn-primary">SUBMIT</button>
+            				<input id="resetform" name="resetform" type="reset" value="Reset" />
+          				</p>
+        			</fieldset>
+      			</form>
+    		</div>
+    	</div>
+    </div>
+</template>
