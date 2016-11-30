@@ -1,6 +1,12 @@
 form, fieldset, legend{margin:0; padding:0; border:none;}
 legend{display:none;}
 
+button, input, optgroup, select, textarea {
+    margin-left: 44px;
+    font: inherit;
+    color: inherit;
+}
+
 /* ----------------------------------------------Search Form------------------------------------- */
 
 #topbar #search{display:block; float:right;}

@@ -96,6 +96,7 @@ form li:after
 	clear:both;
 	display:block;
 	margin-top:10px;
+
 }
 
 * html form li
@@ -260,12 +261,14 @@ input.button_text
 	overflow:visible;
 	padding:0 7px;
 	width:auto;
+	margin-left:44px;
 }
 
 .buttons input
 {
 	font-size:120%;
 	margin-right:5px;
+
 }
 
 /**** Inputs and Labels ****/
@@ -277,5 +280,6 @@ label.description
 	font-size:95%;
 	font-weight:700;
 	line-height:150%;
-	padding:0 0 1px;
+	padding:0 10px 1px;
+	color:white;
 }
